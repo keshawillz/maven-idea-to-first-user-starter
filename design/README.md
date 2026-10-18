@@ -1,19 +1,14 @@
-# Design handoff
+# Design files
 
 This folder holds your design from Claude Design, so Claude Code can match it and so the design travels with your code.
 
 ## How it gets here (Session 1)
 
-1. In Claude Design, when your screens are ready, click **Export**, then **Hand off to Claude Code**. Copy the prompt it gives you.
-2. In your Codespace, start `claude` and paste that prompt with this line added at the end:
-
-   ```
-   Save everything from the handoff into the design/ folder, commit it to main, and stop there. Don't build anything yet.
-   ```
-
-3. Claude Code downloads the handoff into this folder. Check that the files are here, then carry on with your build prompt.
-
-Screenshots work too. If you'd rather not use the handoff, save each screen as a PNG here, named in flow order: `1-home.png`, `2-form.png`, and so on. Drag them from your computer into this folder in the file list on the left.
+1. In Claude Design, when your screens are ready, click **Share** at the top right, then the **Export** tab.
+2. Click **HTML** (standalone web page) to download your design as a web page. That file is your design as code: the exact colors, fonts, spacing and layout.
+3. Click **PNG** to download the screens as an image.
+4. Drag both files from your computer into this folder in the file list on the left of the Codespace. Name them so the order is obvious, for example `design.html` and `screens.png`. If you export one image per screen, number them: `1-home.png`, `2-form.png`, and so on.
+5. Commit, then carry on with your build prompt.
 
 ## The rule
 
