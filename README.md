@@ -36,8 +36,9 @@ Try the form. In this phase it saves to your browser only ("local mode"). It sta
 1. Open a second terminal: click the **+** at the top right of the terminal panel.
 2. Type `claude` and press Enter.
 3. The first time, it asks you to **choose a text style**. Use the arrow keys to pick **Auto (match terminal)** and press Enter. The Codespace terminal is light, and this picks the readable style for it. You can change it later by typing `/theme`.
-4. Then it asks you to **select login method**. Pick **1. Claude account with subscription** (it's already highlighted) and press Enter. Open the link it prints, approve, and paste the code back into the terminal. Use the same account as your Claude Pro plan.
-5. You're in. Try this as a hello world:
+4. Then it asks you to **select login method**. Pick **1. Claude account with subscription** (it's already highlighted) and press Enter.
+5. VS Code asks **Do you want Code to open the external website?** Click **Open**. A Claude sign-in page opens; use the same account as your Claude Pro plan and approve. Paste the code it gives you back into the terminal.
+6. You're in. Try this as a hello world:
 
 ```
 Read SPEC.md, DESIGN.md and CLAUDE.md. Tell me in three sentences what this project is and what you're allowed to build. Don't change anything.
