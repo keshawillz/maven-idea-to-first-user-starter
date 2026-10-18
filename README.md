@@ -35,8 +35,9 @@ Try the form. In this phase it saves to your browser only ("local mode"). It sta
 
 1. Open a second terminal: click the **+** at the top right of the terminal panel.
 2. Type `claude` and press Enter.
-3. The first time, it asks you to log in. Pick **Claude account**, open the link it prints, approve, and paste the code back into the terminal. Use the same account as your Claude Pro plan.
-4. You're in. Try this as a hello world:
+3. The first time, it asks you to **choose a text style**. Use the arrow keys to pick **Auto (match terminal)** and press Enter. The Codespace terminal is light, and this picks the readable style for it. You can change it later by typing `/theme`.
+4. Then it asks you to log in. Pick **Claude account**, open the link it prints, approve, and paste the code back into the terminal. Use the same account as your Claude Pro plan.
+5. You're in. Try this as a hello world:
 
 ```
 Read SPEC.md, DESIGN.md and CLAUDE.md. Tell me in three sentences what this project is and what you're allowed to build. Don't change anything.
