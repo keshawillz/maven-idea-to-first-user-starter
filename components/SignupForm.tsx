@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { isConnected, saveSignup } from "@/lib/signups";
 
 /*
@@ -10,6 +10,12 @@ import { isConnected, saveSignup } from "@/lib/signups";
   This is also the reference for every button and input in the project:
   44px tall, visible focus ring, hover and pressed looks, disabled at 60%,
   and errors shown next to the field that caused them.
+
+  The "mounted" flag below: password managers (LastPass, 1Password) and
+  Grammarly add their own elements inside input fields before React loads,
+  which makes Next.js show a red "Hydration failed" error in development.
+  Rendering the fields only after the page has loaded in the browser avoids
+  it. Use the same pattern in any form you build.
 */
 
 const inputClass =
@@ -36,6 +42,10 @@ export default function SignupForm({
   const [emailError, setEmailError] = useState("");
   const [status, setStatus] = useState<"idle" | "saving" | "done" | "error">("idle");
   const [message, setMessage] = useState("");
+
+  // True once the page is running in the browser. See the note at the top.
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -78,6 +88,10 @@ export default function SignupForm({
     >
       <h2 className="text-lg font-semibold text-zinc-900">{heading}</h2>
 
+      {/* Fields render only in the browser; before that, a same-height gap so the page doesn't jump. */}
+      {!mounted && <div className="mt-4 min-h-56" aria-hidden="true" />}
+
+      {mounted && (
       <div className="mt-4 flex flex-col gap-4">
         <div className="flex flex-col gap-1">
           <label htmlFor="signup-name" className="text-sm text-zinc-700">
@@ -124,6 +138,7 @@ export default function SignupForm({
           {status === "saving" ? "Saving…" : buttonLabel}
         </button>
       </div>
+      )}
 
       {message && (
         <p

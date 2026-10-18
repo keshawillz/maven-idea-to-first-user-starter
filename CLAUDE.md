@@ -30,6 +30,7 @@ These apply to anything you build, without being asked:
 - **Phones first.** One column under 640px. Nothing scrolls sideways. Buttons and links at least 44px tall.
 - **Every button** has hover, pressed, and disabled looks, and a visible focus ring. `components/SignupForm.tsx` shows the pattern; reuse it.
 - **Every form** shows errors next to the field that caused them, and says something while submitting, on success, and on failure.
+- **Form fields render only in the browser.** Password managers and Grammarly inject elements into inputs before React loads, which causes a "Hydration failed" error in development. `components/SignupForm.tsx` shows the pattern (a `mounted` flag set in `useEffect`); use it for any component with inputs.
 - **Every flow** has a loading state, an empty state, and an error state with a real message. No blank screens, no raw error text.
 - **Keyboard works.** Tab moves between controls, Enter submits.
 - **One main action per page.** The button you most want clicked is the only one with the accent color.

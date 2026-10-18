@@ -90,6 +90,7 @@ You'll connect this repository to AWS Amplify Hosting. Amplify builds the backen
 ## If something breaks
 
 - **Preview shows an error page:** read the error in the terminal, copy the first line, and paste it into Claude Code with "what does this mean?"
+- **A red "1 Issue" badge, or "Hydration failed," in the preview:** almost always a browser extension (a password manager, Grammarly) adding things to the page. The app still works. To make it go away, open the preview in an incognito or private window, or turn the extension off for this site.
 - **A preview pane inside VS Code says "github.com refused to connect":** that pane can't log you in to your app. Click the open-in-new-tab icon at its top right, or use the **Ports** tab globe icon. Your app only runs in a real browser tab.
 - **`claude` says command not found:** the install didn't finish. Run `npm install -g @anthropic-ai/claude-code` in the terminal and try again.
 - **Port 3000 is busy:** press Ctrl+C in the terminal running `npm run dev`, then run it again.
