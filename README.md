@@ -25,6 +25,8 @@ In the terminal at the bottom of the Codespace, type:
 npm run dev
 ```
 
+If you paste the command and your browser asks whether the Codespace may **see text and images copied to the clipboard**, click **Allow**. That's a one-time browser permission for pasting into the terminal.
+
 A new browser tab opens with your blank home page and the signup form. The first load takes a few seconds while Next.js compiles the page, so if the tab is blank, refresh it. If no tab opens at all (some browsers block pop-ups), click the **Ports** tab next to the terminal, hover over port 3000, and click the globe icon.
 
 Try the form. In this phase it saves to your browser only ("local mode"). It starts saving for real when you connect Amplify in week 3.
