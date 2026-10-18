@@ -6,8 +6,8 @@ This folder holds your design from Claude Design, so Claude Code can match it an
 
 1. In Claude Design, when your screens are ready, click **Share** at the top right, then the **Export** tab.
 2. Click **HTML** (standalone web page) to download your design as a web page. That file is your design as code: the exact colors, fonts, spacing and layout.
-3. Click **PNG** to download the screens as an image.
-4. Drag both files from your computer into this folder in the file list on the left of the Codespace. Name them so the order is obvious, for example `design.html` and `screens.png`. If you export one image per screen, number them: `1-home.png`, `2-form.png`, and so on.
+3. Click **PNG**. You get a zip file with one image per screen. Unzip it (double-click it on a Mac; right-click, Extract All on Windows).
+4. Drag the HTML file and the PNGs from your computer into this folder in the file list on the left of the Codespace. Name them so the order is obvious: `design.html`, then `1-home.png`, `2-form.png`, and so on.
 5. Commit, then carry on with your build prompt.
 
 ## The rule
