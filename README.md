@@ -56,7 +56,7 @@ Claude Code reads `CLAUDE.md` every time it starts. Those are the rules it follo
 
 The Codespace uses your free hours only while it's running.
 
-- Click the **Codespaces** menu in the bottom-left corner of VS Code, then **Stop Current Codespace**.
+- Click the blue button in the very bottom-left corner of the window. It says **Codespaces:** followed by your Codespace's two-word name (like "vigilant trout"). A list drops down from the top; pick **Stop Current Codespace**.
 - Or go to [github.com/codespaces](https://github.com/codespaces), find it in the list, click **…**, then **Stop**.
 
 Two settings worth changing once, at [github.com/settings/codespaces](https://github.com/settings/codespaces):
