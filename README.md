@@ -10,10 +10,10 @@ The empty foundation every product in the cohort starts from. A blank home page,
 2. Name it after your product (lowercase, dashes, no spaces). Keep it **Public** unless you have a reason not to.
 3. Click **Create repository**. You now own a copy. Everything below happens in *your* repository, not this one.
 
-## 2. Open it in a Codespace (3 minutes, mostly waiting)
+## 2. Open it in a Codespace (5 minutes, mostly waiting)
 
 1. In your new repository, click the green **Code** button, then the **Codespaces** tab, then **Create codespace on main**.
-2. A browser tab opens with VS Code in it. The first time, it installs everything. Wait for the terminal at the bottom to go quiet (about three minutes). You'll see `npm install` finish and then `claude-code` install.
+2. A browser tab opens with VS Code in it. The first time, it installs everything. Wait for the terminal at the bottom to go quiet (about five minutes). You'll see `npm ci` finish and then `claude-code` install.
 3. Nothing is installed on your laptop. The whole project runs in the Codespace.
 
 ## 3. First run (2 minutes)
@@ -24,7 +24,7 @@ In the terminal at the bottom of the Codespace, type:
 npm run dev
 ```
 
-A preview tab opens with your blank home page and the signup form. If it doesn't open on its own, click the **Ports** tab next to the terminal and click the globe icon on port 3000.
+A preview tab opens with your blank home page and the signup form. The first load takes a few seconds while Next.js compiles the page, so if the preview is blank or shows a broken-page icon, click the refresh arrow next to its address bar. If no preview opens at all, click the **Ports** tab next to the terminal and click the globe icon on port 3000.
 
 Try the form. In this phase it saves to your browser only ("local mode"). It starts saving for real when you connect Amplify in week 3.
 

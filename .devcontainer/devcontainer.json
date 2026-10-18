@@ -15,7 +15,10 @@
       "onAutoForward": "openPreview"
     }
   },
-  "postCreateCommand": "npm install && npm install -g @anthropic-ai/claude-code",
+  "containerEnv": {
+    "NEXT_TELEMETRY_DISABLED": "1"
+  },
+  "postCreateCommand": "npm ci && npm install -g @anthropic-ai/claude-code",
   "customizations": {
     "vscode": {
       "extensions": [
