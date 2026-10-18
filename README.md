@@ -13,7 +13,7 @@ The empty foundation every product in the cohort starts from. A blank home page,
 ## 2. Open it in a Codespace (5 minutes, mostly waiting)
 
 1. In your new repository, click the green **Code** button, then the **Codespaces** tab, then **Create codespace on main**.
-2. A browser tab opens with VS Code in it. The first time, it installs everything. Wait for the terminal at the bottom to go quiet (about five minutes). You'll see `npm ci` finish and then `claude-code` install.
+2. A browser tab opens with VS Code in it. The first time, it installs everything. Wait for the terminal at the bottom to go quiet (about five minutes). You'll see `npm install` finish and then `claude-code` install.
 3. Nothing is installed on your laptop. The whole project runs in the Codespace.
 
 ## 3. First run (2 minutes)
