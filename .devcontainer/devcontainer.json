@@ -27,7 +27,9 @@
       ],
       "settings": {
         "editor.formatOnSave": false,
-        "git.autofetch": true
+        "git.autofetch": true,
+        "chat.disableAIFeatures": true,
+        "terminal.integrated.initialHint": false
       }
     },
     "codespaces": {
