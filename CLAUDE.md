@@ -12,7 +12,7 @@ This is a founder's first product, built in the Idea to First User cohort. The f
 
 ## The rules
 
-1. Read `SPEC.md` and `DESIGN.md` first. If `design/` holds screen images, look at them too and match them; where an image and `DESIGN.md` disagree, `DESIGN.md` wins. Build only the one core flow the spec describes, in the look the design file describes. No login, no user accounts, no payments, no admin pages, no extra features. If either file is unclear, ask before building.
+1. Read `SPEC.md` and `DESIGN.md` first. If `design/` holds a Claude Design handoff or screen images, read those too and match them; where the design and `DESIGN.md` disagree, `DESIGN.md` wins. Build only the one core flow the spec describes, in the look the design file describes. No login, no user accounts, no payments, no admin pages, no extra features. If either file is unclear, ask before building.
 2. Plan before code. Show the plan as a numbered list and wait for OK.
 3. Work on a branch, never on `main`. Use the branch name the founder gives you (default: `build-core-flow`).
 4. Before any merge, explain every change in plain English, file by file, and say exactly what to click through in the preview to test it.
