@@ -76,6 +76,7 @@ Next time, open the same Codespace from the **Code** button (it lists existing o
 | `lib/signups.ts` | Saves a signup. Local mode now, Amplify in week 3. |
 | `SPEC.md` | Your one-page spec. Claude Code reads it before building. Fill it in during Session 1. |
 | `DESIGN.md` | Your design direction: voice, colors, type, sizes. Claude Code reads it before building any screen. Fill it in during Session 1. |
+| `design/` | Your Claude Design screens, saved as PNG files. Claude Code looks at them before building. Added in Session 1. |
 | `LAUNCH-CHECK.md` | Twelve pre-launch checks and the prompts to run them. Used in Sessions 3 and 4. |
 | `CLAUDE.md` | The rules Claude Code follows in this project. |
 | `amplify/` | The Amplify backend: one `Signup` table. Don't edit it in weeks 1 and 2. |

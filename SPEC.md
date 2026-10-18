@@ -18,7 +18,7 @@ Fill this in during Session 1, with DESIGN.md. Claude Code reads both before it 
 
 ## One flow
 
-The single thing the user can do in v1, as a numbered list of screens. Match your Claude Design mockup.
+The single thing the user can do in v1, as a numbered list of screens. One screen per image in `design/`.
 
 1. [Screen 1: what the user sees and does]
 2. [Screen 2]
