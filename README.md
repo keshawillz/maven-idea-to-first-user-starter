@@ -43,7 +43,8 @@ Try the form. In this phase it saves to your browser only ("local mode"). It sta
 8. The page shows a code. Copy it, paste it into the terminal, and press Enter. When it says **Login successful. Press Enter to continue**, press Enter again.
 9. It shows **Security notes**: Claude can make mistakes, and you review what it does. Read them, then press Enter.
 10. It asks **Use Claude Code's terminal setup?** Leave **1. Yes, use recommended settings** highlighted and press Enter. This makes Shift+Enter start a new line in a prompt, so Enter alone sends it.
-11. You're in. Try this as a hello world:
+11. It asks a **Quick safety check** about the folder. Press the **down arrow** to move to **Yes, I trust this folder**, then press Enter. Don't just press Enter here: the first option is **No, exit**, and it will close Claude Code. If that happens, type `claude` again.
+12. You're in. Try this as a hello world:
 
 ```
 Read SPEC.md, DESIGN.md and CLAUDE.md. Tell me in three sentences what this project is and what you're allowed to build. Don't change anything.
