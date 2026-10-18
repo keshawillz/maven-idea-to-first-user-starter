@@ -24,7 +24,7 @@ In the terminal at the bottom of the Codespace, type:
 npm run dev
 ```
 
-A preview tab opens with your blank home page and the signup form. The first load takes a few seconds while Next.js compiles the page, so if the preview is blank or shows a broken-page icon, click the refresh arrow next to its address bar. If no preview opens at all, click the **Ports** tab next to the terminal and click the globe icon on port 3000.
+A new browser tab opens with your blank home page and the signup form. The first load takes a few seconds while Next.js compiles the page, so if the tab is blank, refresh it. If no tab opens at all (some browsers block pop-ups), click the **Ports** tab next to the terminal, hover over port 3000, and click the globe icon.
 
 Try the form. In this phase it saves to your browser only ("local mode"). It starts saving for real when you connect Amplify in week 3.
 
@@ -78,6 +78,7 @@ You'll connect this repository to AWS Amplify Hosting. Amplify builds the backen
 ## If something breaks
 
 - **Preview shows an error page:** read the error in the terminal, copy the first line, and paste it into Claude Code with "what does this mean?"
+- **A preview pane inside VS Code says "github.com refused to connect":** that pane can't log you in to your app. Click the open-in-new-tab icon at its top right, or use the **Ports** tab globe icon. Your app only runs in a real browser tab.
 - **`claude` says command not found:** the install didn't finish. Run `npm install -g @anthropic-ai/claude-code` in the terminal and try again.
 - **Port 3000 is busy:** press Ctrl+C in the terminal running `npm run dev`, then run it again.
 - **Anything else:** post in the cohort channel with the exact error message, or bring it to office hours.
